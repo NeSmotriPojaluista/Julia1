@@ -18,3 +18,7 @@ function hrello!(::Robot)
     goback(r, West)
     movemod(r, West)
     goback(r, Ost)
+    if (ismarker(r)==false)
+        putmarker!(r)
+    end
+end
